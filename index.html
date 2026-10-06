@@ -70,7 +70,7 @@ section{margin-top:56px;scroll-margin-top:70px}
 .type .spec span{font-size:13px;color:var(--muted)}
 
 /* catalogue */
-.cat{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),1fr));gap:14px}
+.cat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .prod{background:var(--card);border:1.5px solid var(--line);border-radius:20px;overflow:hidden;display:grid}
 .prod img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
 .prod img.pk{aspect-ratio:1/1}
@@ -198,6 +198,7 @@ body.show-safe .ad.v .safe{display:flex}
 
 .method .tile strong{font-size:16.5px}
 .method .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+@media (max-width:640px){ .cat{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px} }
 @media (max-width:520px){ .art.tall .ad{width:100%} .copy .row{grid-template-columns:1fr;gap:2px} }
 @media (prefers-reduced-motion:no-preference){ .card{transition:transform .2s} .card:hover{transform:translateY(-3px)} }
 </style>
